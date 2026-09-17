@@ -1,0 +1,19 @@
+# Sorties des scripts (regenerables, peuvent contenir des donnees d'audit client)
+scripts/cache/
+scripts/sortie-places/
+sortie-places/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Editeurs et OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Jamais de secret dans le depot
+.env
+*.key

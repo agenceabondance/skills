@@ -1,0 +1,66 @@
+# Index du corpus SEO local
+
+Une ligne par source. Lu en premier pour router vers les bonnes fiches. Le corpus vit ici et nulle part ailleurs : les brevets du local ne sont pas dans la skill `brevetgoogle`, ils sont dans `brevets/`.
+
+**Niveau de preuve** (colonne Preuve) : c'est la colonne qui manque partout ailleurs, et la raison d'être de ce corpus. Chaque contrôle de la grille et chaque reco d'un livrable porte le niveau de sa source.
+
+| Niveau | Ce que ça veut dire | Ce qu'on peut écrire |
+|---|---|---|
+| **Officiel** | Google le dit publiquement (doc d'aide, règles) | « Google indique que... » |
+| **Schéma fuité** | Le signal existe dans le code ou la doc interne (Geostore 2026, Content Warehouse 2024) ; poids inconnu | « Le signal existe dans le schéma de Google ; son poids n'est pas connu » |
+| **Brevet** | Google a décrit le mécanisme dans un brevet ; déploiement non prouvé | « Un brevet Google décrit... » jamais « Google fait... » |
+| **Empirique** | Un test publié avec méthode a mesuré un effet | « Un test de [source] sur [n] fiches a observé... » |
+| **Consensus** | Des experts le pensent (enquête Whitespark) | « Les experts du local classent ce facteur au rang N » |
+| **Analyse** | Lecture argumentée d'un expert identifié, sans mesure | À citer comme opinion |
+
+Une reco qui ne s'adosse à aucune fiche est marquée `(hors corpus)` dans le livrable.
+
+## Sources
+
+| N° | Fiche | Titre | Éditeur | Type | Preuve | Publié | Ajouté | Fiabilité | Sujets |
+|----|-------|-------|---------|------|--------|--------|--------|-----------|--------|
+| 01 | [01-google-classement-local](01-google-classement-local.md) | Améliorer votre classement local sur Google | Google | Doc officielle | Officiel | non datée | 2026-09-17 | Haute | pertinence, distance, proeminence, fiche-complete, avis, photos, horaires |
+| 02 | [02-google-regles-representation](02-google-regles-representation.md) | Consignes de représentation d'un établissement | Google | Doc officielle | Officiel | non datée | 2026-09-17 | Haute | nom, adresse, categories, telephone, site-web, horaires, eligibilite, suspension, multi-etablissements |
+| 03 | [03-google-regles-contenus-utilisateurs](03-google-regles-contenus-utilisateurs.md) | Règles des contenus utilisateurs Maps (avis) | Google | Doc officielle | Officiel | non datée | 2026-09-17 | Haute | avis, sollicitation, faux-avis, incitation, suspension |
+| 04 | [04-resoneo-google-map-dissected](04-resoneo-google-map-dissected.md) | Google Map disséqué, les 72 signaux d'Oyster Rank | Resoneo | Étude | Schéma fuité | 2026-08 | 2026-09-17 | Haute | oyster-rank, engagement, avis, categories, chaines, presence-web, poids-inconnus |
+| 05 | [05-whitespark-lsrf-2026](05-whitespark-lsrf-2026.md) | Local Search Ranking Factors 2026 | Whitespark | Étude | Consensus | 2025-11-06 | 2026-09-17 | Haute | ponderation, top-facteurs, categorie-principale, horaires, avis, services, facteurs-negatifs |
+| 06 | [06-sterling-sky-near-me-2025](06-sterling-sky-near-me-2025.md) | 8 186 fiches, 200 villes : ce qui classe sur « near me » | Sterling Sky | Étude | Empirique | 2025-11-05 | 2026-09-17 | Haute | avis, cadence-avis, avis-avec-texte, adresse-masquee, page-atterrissage |
+| 07 | [07-sterling-sky-services](07-sterling-sky-services.md) | Les Services de la fiche influencent-ils le classement ? | Sterling Sky | Test | Empirique | 2026-02-27 | 2026-09-17 | Moyenne | services, services-predefinis, delai-effet |
+| 08 | [08-near-media-fuite-api-2024](08-near-media-fuite-api-2024.md) | La fuite API 2024 lue pour le local | Near Media (+ Local SEO Guide) | Analyse | Schéma fuité | 2024-06 | 2026-09-17 | Haute | clics, autorite-de-site, chaines, categories, citations, entites |
+
+## Brevets (`brevets/`)
+
+Périmètre : brevets dont le déposant est Google, qui décrivent un mécanisme de classement **local** (fiches, lieux, distance, avis). Lus sur pièces avec `scripts/brevet.py`.
+
+| Numéro | Fiche | Titre | Priorité | Publié | Statut | Sujets |
+|---|---|---|---|---|---|---|
+| US8046371B2 | [US8046371B2](brevets/US8046371B2.md) | Scoring local search results based on location prominence | 2005 | 2011 | Expiré (terme 2025) | proeminence, page-autoritaire, citations, avis |
+| US8898173B1 | [US8898173B1](brevets/US8898173B1.md) | Ranking location search results based on multiple distance measures | 2010 | 2014 | Expiré (annuités) | distance, requete-ville, polygone, centre-ville |
+| US11893034B2 | [US11893034B2](brevets/US11893034B2.md) | Distance based search ranking demotion | 2013 | 2024 | Actif | distance, retrogradation, intention-locale |
+| US10394830B1 | [US10394830B1](brevets/US10394830B1.md) | Sentiment detection as a ranking signal for reviewable entities ⚠️ revendications délivrées sur les interactions, pas le sentiment | 2007 | 2019 | Actif | avis, sentiment, texte-des-avis |
+| US10929409B2 | [US10929409B2](brevets/US10929409B2.md) | Identifying local experts for local search | 2013 | 2021 | Expiré (annuités) | avis, experts-locaux, categorie, personnalisation |
+| US8171048B2 | [US8171048B2](brevets/US8171048B2.md) | Ranking documents based on a location sensitivity factor | 2003 | 2012 | Expiré (annuités) | intention-locale, pages-locales, resultats-web |
+
+## Repères de routage
+
+| La question porte sur | Lire d'abord |
+|---|---|
+| Ce que Google dit officiellement du classement | 01 |
+| Le nom, l'adresse, les catégories, l'éligibilité, un risque de suspension | 02, 05 (facteurs négatifs) |
+| Les avis : ce qu'on a le droit de faire | 03 |
+| Les avis : ce qui compte (volume, cadence, texte, qui les écrit) | 06, US10394830B1, US10929409B2, 04, 05 |
+| Quels signaux existent vraiment chez Google | 04, 08 |
+| Quel facteur pèse le plus (au dire des experts) | 05 |
+| Les services de la fiche | 07, 05 |
+| La distance, une requête « + ville », un établissement hors commune | US8898173B1, US11893034B2, 05 |
+| Les pages locales du site, l'intention locale d'une requête | US8171048B2, 08, 05 |
+| La proéminence, les citations NAP, le site lié | US8046371B2, 01, 08, 04 |
+| Les chaînes / réseaux multi-établissements | 04, 08, 02 |
+| Les métriques Performances de la fiche (vues, itinéraires, clics) | 04 |
+
+## Trous connus du corpus (à combler quand une source fiable se présente)
+
+- Aucune source française sur les requêtes « métier + ville » (les tests empiriques sont américains, sur « near me »).
+- Aucun test publié sur l'effet des **posts** et des **photos** sur le classement (uniquement du consensus, fiche 05).
+- Aucune source sur les **questions-réponses** de la fiche.
+- Aucune source sur le comportement du pack local dans les **AI Overviews / Mode IA** ; la skill `geo` (fiche 11) note que le local est un des secteurs touchés.
