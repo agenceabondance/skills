@@ -6,7 +6,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-RACINE = Path(__file__).resolve().parents[1]
+RACINE = Path(__file__).resolve().parents[1]  # skills/local/audit-local
 SCRIPTS = RACINE / "scripts"
 FIXTURES = RACINE / "tests" / "fixtures"
 

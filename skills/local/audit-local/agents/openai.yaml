@@ -1,0 +1,5 @@
+interface:
+  display_name: "Audit local"
+  short_description: "Auditer une fiche ou un réseau"
+policy:
+  allow_implicit_invocation: false

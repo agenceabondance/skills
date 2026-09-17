@@ -1,19 +1,6 @@
 # Index du corpus SEO local
 
-Une ligne par source. Lu en premier pour router vers les bonnes fiches. Le corpus vit ici et nulle part ailleurs : les brevets du local ne sont pas dans la skill `brevetgoogle`, ils sont dans `brevets/`.
-
-**Niveau de preuve** (colonne Preuve) : c'est la colonne qui manque partout ailleurs, et la raison d'être de ce corpus. Chaque contrôle de la grille et chaque reco d'un livrable porte le niveau de sa source.
-
-| Niveau | Ce que ça veut dire | Ce qu'on peut écrire |
-|---|---|---|
-| **Officiel** | Google le dit publiquement (doc d'aide, règles) | « Google indique que... » |
-| **Schéma fuité** | Le signal existe dans le code ou la doc interne (Geostore 2026, Content Warehouse 2024) ; poids inconnu | « Le signal existe dans le schéma de Google ; son poids n'est pas connu » |
-| **Brevet** | Google a décrit le mécanisme dans un brevet ; déploiement non prouvé | « Un brevet Google décrit... » jamais « Google fait... » |
-| **Empirique** | Un test publié avec méthode a mesuré un effet | « Un test de [source] sur [n] fiches a observé... » |
-| **Consensus** | Des experts le pensent (enquête Whitespark) | « Les experts du local classent ce facteur au rang N » |
-| **Analyse** | Lecture argumentée d'un expert identifié, sans mesure | À citer comme opinion |
-
-Une reco qui ne s'adosse à aucune fiche est marquée `(hors corpus)` dans le livrable.
+Une ligne par source. Lu en premier pour router vers les bonnes fiches. La colonne **Preuve** porte le niveau de preuve de chaque source, défini dans la skill `sourcer` (Officiel, Empirique, Consensus, Schéma fuité, Brevet, Analyse) ; c'est la colonne qui manque partout ailleurs, et la raison d'être de ce corpus.
 
 ## Sources
 
@@ -30,7 +17,7 @@ Une reco qui ne s'adosse à aucune fiche est marquée `(hors corpus)` dans le li
 
 ## Brevets (`brevets/`)
 
-Périmètre : brevets dont le déposant est Google, qui décrivent un mécanisme de classement **local** (fiches, lieux, distance, avis). Lus sur pièces avec `scripts/brevet.py`.
+Périmètre : brevets dont le déposant est Google, qui décrivent un mécanisme de classement **local** (fiches, lieux, distance, avis). Lus sur pièces avec la skill `brevet-google`.
 
 | Numéro | Fiche | Titre | Priorité | Publié | Statut | Sujets |
 |---|---|---|---|---|---|---|

@@ -1,0 +1,17 @@
+{
+  "name": "abondance",
+  "owner": {
+    "name": "Abondance",
+    "url": "https://www.abondance.com"
+  },
+  "description": "Les skills Abondance, installables comme plugin Claude Code.",
+  "plugins": [
+    {
+      "name": "abondance-skills",
+      "source": "./",
+      "description": "SEO local sourcé, brevets Google, discipline de citation.",
+      "category": "productivity",
+      "keywords": ["seo", "seo-local", "brevets"]
+    }
+  ]
+}

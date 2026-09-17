@@ -1,7 +1,7 @@
 # Sorties des scripts (regenerables, peuvent contenir des donnees d'audit client)
-scripts/cache/
-scripts/sortie-places/
-sortie-places/
+**/scripts/cache/
+**/scripts/sortie-places/
+**/sortie-places/
 
 # Python
 __pycache__/

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Brevet Google"
+  short_description: "Lire un brevet sur ses revendications"
