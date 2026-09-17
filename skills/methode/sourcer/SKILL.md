@@ -1,11 +1,11 @@
 ---
 name: sourcer
-description: Discipline de citation des skills Abondance. Utiliser dès qu'une réponse ou un livrable affirme quelque chose sur le fonctionnement de Google, cite une fiche [NN] ou un brevet [USxxxx], ou qualifie un niveau de preuve.
+description: "Discipline de citation des skills Abondance. Utiliser dès qu'une réponse ou un livrable affirme quelque chose sur le fonctionnement de Google, cite une source [NN] ou un brevet [USxxxx], ou qualifie un niveau de preuve."
 ---
 
 # Sourcer
 
-La règle tient en un mot : **adossé**. Chaque affirmation sur Google est adossée à une fiche du corpus (`[NN]`) ou à un brevet (`[USxxxx]`), avec le niveau de preuve de cette source, ou porte `(hors corpus)`. Une pratique du métier sans fiche est `(hors corpus)`, même quand elle est vraie.
+La règle tient en un mot : **adossé**. Chaque affirmation sur Google est adossée à une source du corpus (`[NN]`) ou à un brevet (`[USxxxx]`), avec le niveau de preuve de cette source, ou porte `(hors corpus)`. Une pratique du métier sans source est `(hors corpus)`, même quand elle est vraie.
 
 ## Niveaux de preuve
 

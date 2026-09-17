@@ -1,6 +1,7 @@
 ---
 name: audit-local
-description: Auditer une fiche d'établissement Google ou un réseau, en six phases, jusqu'au livrable.
+description: "Auditer une fiche d'établissement Google ou un réseau, en six phases, jusqu'au livrable."
+argument-hint: "Établissements, requêtes cibles, villes"
 disable-model-invocation: true
 ---
 
@@ -20,7 +21,7 @@ Terminé quand la section 1 du gabarit est remplie et que chaque requête porte 
 
 **C'est la phase qui protège le livrable.** Une famille sans donnée est ⚪ et le reste. Un ⚪ annoncé ici est une limite ; un ⚪ découvert en phase 4 est un trou.
 
-Pour chaque ligne de la section 2 du gabarit, ✅ ou ⚪ : fiche publique, export Performances, trafic UTM, positions par ville, pack des concurrents. Demander au client ce qui manque avant de collecter.
+Si `docs/agents/abondance.md` existe (écrit par le setup), il pré-remplit les outils disponibles et le dossier des livrables : ne demander que ce qui change pour ce client. Pour chaque ligne de la section 2 du gabarit, ✅ ou ⚪ : fiche publique, export Performances, trafic UTM, positions par ville, pack des concurrents. Demander au client ce qui manque avant de collecter.
 
 Terminé quand la section 2 est remplie et que chaque famille de la grille a sa source de donnée (codes M/P/E/G/K) ou son ⚪ motivé.
 
@@ -50,7 +51,7 @@ Terminé quand les 43 contrôles ont un verdict et que chaque 🟠 / 🔴 porte 
 
 ## Phase 5 : Écrire le livrable
 
-Depuis `grille/gabarit-livrable.md`, en markdown, dans le dossier de travail du client. Les sections 2 (données non disponibles) et 7 (ce que l'audit ne dit pas) ont le même statut que les autres : sans elles, le livrable n'est pas fini.
+Depuis `grille/gabarit-livrable.md`, en markdown, dans le dossier des livrables (celui du setup, sinon celui que le client indique). Les sections 2 (données non disponibles) et 7 (ce que l'audit ne dit pas) ont le même statut que les autres : sans elles, le livrable n'est pas fini.
 
 Les recommandations (section 6) sont classées : ce qui protège (A), puis ce qui est prouvé et peu coûteux (Officiel, Empirique), puis le Consensus, en dernier ce qui ne tient qu'à un Schéma ou un Brevet. Une action adossée à un signal que le schéma marque déprécié (le PageRank de la page d'autorité, [04]) sort de la liste.
 

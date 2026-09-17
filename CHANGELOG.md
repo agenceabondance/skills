@@ -4,6 +4,10 @@
 
 - Le dépôt devient un dépôt de skills : `skills/local/` (`seo-local`, `audit-local`) et `skills/methode/` (`sourcer`, `ajouter-source`, `brevet-google`, `ask-abondance`). Chaque skill est user-invoked ou model-invoked ; `sourcer` devient l'unique propriétaire des niveaux de preuve ; plugin Claude Code dans `.claude-plugin/`.
 - `seo-local` ne fait plus que le corpus (répondre, vérifier) ; l'audit en six phases avec critères de fin est `audit-local` ; la lecture de brevets est `brevet-google`.
+- `setup-abondance-skills` : configuration par dépôt de travail (livrables, outils de mesure, clé Places), lue par `audit-local` en phase 2.
+- `CONTEXT.md` (vocabulaire : **fiche** est l'établissement, **source** est l'entrée du corpus), `.agents/` (invocation, bloc d'installation, pages docs, ADR), `.out-of-scope/` (score global, positions lues dans Places, netlinking pour la fiche), une page `docs/<bucket>/<skill>.md` par skill promue.
+- `scripts/check-repo.py` vérifie les conventions mécaniques (invocation cohérente, présence dans README et plugin, pages docs, tiret cadratin, version) ; CI le lance. `scripts/link-skills.sh` pour les mainteneurs.
+- `AGENTS.md` est un lien vers `CLAUDE.md`, pour que Codex lise les mêmes règles.
 
 ## 0.1.0 - 2026-09-17
 

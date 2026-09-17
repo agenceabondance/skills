@@ -1,6 +1,6 @@
 {
   "name": "abondance-skills",
-  "version": "0.2.0",
+  "version": "0.1.0",
   "description": "Les skills Abondance : SEO local sourcé, brevets Google lus sur leurs revendications, et la discipline de citation qui court dessous.",
   "author": {
     "name": "Abondance",
@@ -15,6 +15,7 @@
     "./skills/methode/sourcer",
     "./skills/methode/ajouter-source",
     "./skills/methode/brevet-google",
-    "./skills/methode/ask-abondance"
+    "./skills/methode/ask-abondance",
+    "./skills/methode/setup-abondance-skills"
   ]
 }

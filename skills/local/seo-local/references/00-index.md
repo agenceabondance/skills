@@ -1,10 +1,10 @@
 # Index du corpus SEO local
 
-Une ligne par source. Lu en premier pour router vers les bonnes fiches. La colonne **Preuve** porte le niveau de preuve de chaque source, défini dans la skill `sourcer` (Officiel, Empirique, Consensus, Schéma fuité, Brevet, Analyse) ; c'est la colonne qui manque partout ailleurs, et la raison d'être de ce corpus.
+Une ligne par source. Lu en premier pour router vers les bonnes sources. La colonne **Preuve** porte le niveau de preuve de chaque source, défini dans la skill `sourcer` (Officiel, Empirique, Consensus, Schéma fuité, Brevet, Analyse) ; c'est la colonne qui manque partout ailleurs, et la raison d'être de ce corpus.
 
 ## Sources
 
-| N° | Fiche | Titre | Éditeur | Type | Preuve | Publié | Ajouté | Fiabilité | Sujets |
+| N° | Source | Titre | Éditeur | Type | Preuve | Publié | Ajouté | Fiabilité | Sujets |
 |----|-------|-------|---------|------|--------|--------|--------|-----------|--------|
 | 01 | [01-google-classement-local](01-google-classement-local.md) | Améliorer votre classement local sur Google | Google | Doc officielle | Officiel | non datée | 2026-09-17 | Haute | pertinence, distance, proeminence, fiche-complete, avis, photos, horaires |
 | 02 | [02-google-regles-representation](02-google-regles-representation.md) | Consignes de représentation d'un établissement | Google | Doc officielle | Officiel | non datée | 2026-09-17 | Haute | nom, adresse, categories, telephone, site-web, horaires, eligibilite, suspension, multi-etablissements |
@@ -19,7 +19,7 @@ Une ligne par source. Lu en premier pour router vers les bonnes fiches. La colon
 
 Périmètre : brevets dont le déposant est Google, qui décrivent un mécanisme de classement **local** (fiches, lieux, distance, avis). Lus sur pièces avec la skill `brevet-google`.
 
-| Numéro | Fiche | Titre | Priorité | Publié | Statut | Sujets |
+| Numéro | Source | Titre | Priorité | Publié | Statut | Sujets |
 |---|---|---|---|---|---|---|
 | US8046371B2 | [US8046371B2](brevets/US8046371B2.md) | Scoring local search results based on location prominence | 2005 | 2011 | Expiré (terme 2025) | proeminence, page-autoritaire, citations, avis |
 | US8898173B1 | [US8898173B1](brevets/US8898173B1.md) | Ranking location search results based on multiple distance measures | 2010 | 2014 | Expiré (annuités) | distance, requete-ville, polygone, centre-ville |
@@ -48,6 +48,6 @@ Périmètre : brevets dont le déposant est Google, qui décrivent un mécanisme
 ## Trous connus du corpus (à combler quand une source fiable se présente)
 
 - Aucune source française sur les requêtes « métier + ville » (les tests empiriques sont américains, sur « near me »).
-- Aucun test publié sur l'effet des **posts** et des **photos** sur le classement (uniquement du consensus, fiche 05).
+- Aucun test publié sur l'effet des **posts** et des **photos** sur le classement (uniquement du consensus, source 05).
 - Aucune source sur les **questions-réponses** de la fiche.
-- Aucune source sur le comportement du pack local dans les **AI Overviews / Mode IA** ; la skill `geo` (fiche 11) note que le local est un des secteurs touchés.
+- Aucune source sur le comportement du pack local dans les **AI Overviews / Mode IA** ; la skill `geo` (sa source 11) note que le local est un des secteurs touchés.

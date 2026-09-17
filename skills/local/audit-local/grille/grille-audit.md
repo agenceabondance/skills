@@ -1,6 +1,6 @@
 # Grille d'audit d'une fiche Google Business Profile
 
-Une ligne par contrôle. Chaque contrôle porte sa source (`[NN]` = fiche du corpus, `[USxxxx]` = brevet), son **niveau de preuve** (voir la skill `sourcer`) et dit si le propriétaire peut agir. **Pas de score global** : les poids sont inconnus ([04]), on rend un verdict par famille.
+Une ligne par contrôle. Chaque contrôle porte sa source (`[NN]` = source du corpus, `[USxxxx]` = brevet), son **niveau de preuve** (voir la skill `sourcer`) et dit si le propriétaire peut agir. **Pas de score global** : les poids sont inconnus ([04]), on rend un verdict par famille.
 
 **Colonne « Comment »** : où prendre la donnée.
 

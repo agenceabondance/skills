@@ -17,3 +17,6 @@ Thumbs.db
 # Jamais de secret dans le depot
 .env
 *.key
+
+# Reglages locaux de Claude Code
+.claude/

@@ -1,6 +1,6 @@
 ---
 name: brevet-google
-description: Lire un brevet Google sur ses revendications. Utiliser quand l'utilisateur cite un numéro de brevet, demande ce qu'un brevet Google décrit ou prouve, ou veut trouver les brevets Google sur un sujet.
+description: "Lire un brevet Google sur ses revendications. Utiliser quand l'utilisateur cite un numéro de brevet, demande ce qu'un brevet Google décrit ou prouve, ou veut trouver les brevets Google sur un sujet."
 ---
 
 # Brevet Google
@@ -19,8 +19,8 @@ Call the Skill tool with "sourcer" : un brevet est un niveau de preuve à lui se
 
 `scripts/brevet.py --chercher "<sujet>"` liste les brevets sur le sujet dont le déposant est Google (`--tous` pour lever le filtre). Un brevet qui entre dans un corpus se lit en entier ; la liste ne suffit pas.
 
-## Rédiger une fiche
+## Rédiger la source
 
-Pour verser le brevet dans un corpus, la fiche suit [`GABARIT-BREVET.md`](GABARIT-BREVET.md). Le titre traduit vient après le numéro ; le statut porte sa date de relevé, parce qu'il bouge (annuités, expiration).
+Pour verser le brevet dans un corpus, la source suit [`GABARIT-BREVET.md`](GABARIT-BREVET.md). Le titre traduit vient après le numéro ; le statut porte sa date de relevé, parce qu'il bouge (annuités, expiration).
 
-Terminé quand la fiche porte les revendications clés citées mot pour mot, le statut daté, et la section « ce que le brevet ne prouve pas » remplie.
+Terminé quand la source porte les revendications clés citées mot pour mot, le statut daté, et la section « ce que le brevet ne prouve pas » remplie.

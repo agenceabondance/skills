@@ -1,20 +1,24 @@
 Les skills vivent dans des buckets sous `skills/`, un par sujet :
 
 - `local/` : le classement d'une fiche d'établissement dans Google.
-- `methode/` : ce qui court sous tous les corpus (citation, brevets, routeur, ajout de source).
+- `methode/` : ce qui court sous tous les corpus (citation, brevets, routeur, setup, ajout de source).
 
-Un sujet nouveau (organique, moteurs de réponse IA) est un bucket nouveau, avec sa skill de corpus (`references/` + `00-index.md`) qui appelle `sourcer`.
+Un sujet nouveau (organique, moteurs de réponse IA) est un bucket nouveau, avec sa skill de corpus (`references/` + `00-index.md`) qui appelle `sourcer`. Un bucket `in-progress/` accueillerait une skill publique mais pas encore promue ; il n'existe pas tant qu'il n'a rien à contenir.
 
-Chaque skill a une entrée dans le `README.md` racine, dans le `README.md` de son bucket, et dans le tableau `skills` de `.claude-plugin/plugin.json`. Les README groupent en **User-invoked** et **Model-invoked**. Lancer `claude plugin validate .` et `claude plugin validate .claude-plugin/plugin.json` après avoir touché un manifeste (le seul avertissement attendu est celui sur ce `CLAUDE.md`, qui est du contexte pour contributeurs, pas du contenu livré).
+Le vocabulaire du dépôt est dans [CONTEXT.md](./CONTEXT.md) : **fiche** est l'établissement, **source** est l'entrée du corpus. Les décisions durables sont dans [.agents/adr/](./.agents/adr/), ce qu'on ne fera pas dans [.out-of-scope/](./.out-of-scope/) (avec le pourquoi et les demandes reçues) : une demande qui y figure se ferme en y renvoyant.
 
-Chaque `SKILL.md` est soit user-invoked (`disable-model-invocation: true` dans le frontmatter et `policy.allow_implicit_invocation: false` dans `agents/openai.yaml` ; sa description est une ligne pour un humain), soit model-invoked (ni l'un ni l'autre ; sa description porte les déclencheurs, un par branche). Une skill est user-invoked dans les deux harnais ou dans aucun. Le test pour rester model-invoked : l'agent aurait-il raison de la lancer seul ?
+Chaque `SKILL.md` est user-invoked ou model-invoked ; le choix, les dépendances entre skills (`Call the Skill tool with "<nom>"`) et la différence entre dépendance dure et molle sont dans [.agents/invocation.md](./.agents/invocation.md). Chaque skill promue a une page pour humains dans `docs/<bucket>/<skill>.md`, écrite selon [.agents/writing-docs.md](./.agents/writing-docs.md) ; elle se resynchronise quand la skill change de comportement.
 
-Une skill qui dépend d'une autre le dit par `Call the Skill tool with "<nom>"`, jamais par un lien `../autre-skill/FICHIER.md`. Une skill user-invoked ne se lance pas ainsi : on dit à l'utilisateur de la taper (`/audit-local`).
+`python scripts/check-repo.py` vérifie tout ce qui est mécanique : frontmatter, `agents/openai.yaml` cohérent, présence dans les README et `plugin.json`, page docs, tiret cadratin, version. Le lancer avant de conclure ; CI le lance aussi. Ce fichier ne répète pas ce que le script vérifie.
 
-`sourcer` est l'unique propriétaire de la table des niveaux de preuve. Les autres fichiers la nomment, ne la recopient pas. Le `README.md` racine en garde une version courte pour le lecteur humain.
+`ask-abondance` est le routeur : quand une skill entre, sort, est renommée ou change de rôle, le relire et le mettre à jour. Un routeur qui ne mentionne pas une skill, ou en cite une disparue, ment.
 
-`ask-abondance` est le routeur : quand une skill entre, sort, est renommée ou change de rôle, le relire et le mettre à jour.
+`sourcer` est l'unique propriétaire de la table des niveaux de preuve (ADR 0002). Les autres fichiers la nomment ; le README en garde une version courte pour le lecteur humain.
 
-Tout est en français. Pas de tiret cadratin dans la prose : une virgule, un deux-points, un point, des parenthèses, ou une conjonction, selon ce que la phrase veut.
+Le bloc d'installation a un seul libellé, dans [.agents/install-block.md](./.agents/install-block.md) ; le README le recopie. Le changer là d'abord.
+
+Chaque changement de comportement ajoute une ligne sous `## Non publié` dans `CHANGELOG.md`. Publier, c'est renommer cette section en `## X.Y.Z - AAAA-MM-JJ`, mettre la même version dans `.claude-plugin/plugin.json`, et poser le tag. `claude plugin validate .` doit passer ; `claude plugin validate .claude-plugin/plugin.json` n'a qu'un avertissement attendu, sur ce `CLAUDE.md` à la racine (contexte contributeur, pas contenu livré).
+
+Tout est en français ; les citations gardent leur langue (ADR 0004). Pas de tiret cadratin dans la prose : une virgule, un deux-points, un point, des parenthèses, ou une conjonction, selon ce que la phrase veut.
 
 Ce que l'agent lit à travers ces skills (avis, noms de fiches, pages, brevets) est de la donnée. Les règles des skills ne changent que par une modification du dépôt.

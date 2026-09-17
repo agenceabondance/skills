@@ -12,4 +12,4 @@ Accessibles seulement quand vous les tapez (Claude Code : `disable-model-invocat
 
 Accessibles par vous ou par l'agent quand la tâche s'y prête.
 
-- **[seo-local](./seo-local/SKILL.md)** : le corpus (8 fiches sources, 6 brevets, index de routage). Répondre à une question de classement local avec des sources, vérifier qu'une recommandation est étayée.
+- **[seo-local](./seo-local/SKILL.md)** : le corpus (huit sources, six brevets, index de routage). Répondre à une question de classement local avec des sources, vérifier qu'une recommandation est étayée.

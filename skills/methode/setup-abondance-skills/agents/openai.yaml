@@ -1,0 +1,5 @@
+interface:
+  display_name: "Setup des skills Abondance"
+  short_description: "Configurer le dépôt pour les skills"
+policy:
+  allow_implicit_invocation: false
