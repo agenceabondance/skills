@@ -1,5 +1,5 @@
 ﻿requete;ville;rang;place_id;nom;categorie_principale;type_principal;types;note;nb_avis;adresse;telephone;site;statut;horaires;nb_photos_max10;dernier_avis;avis_avec_texte_sur_5;description_editoriale;lat;lng;maps
-Motorsport Academy;;; a;Motorsport Academy Le Mans;École de pilotage;;;4.7;812;Le Mans;02;https://x;OPERATIONAL;lun;10;;;;;;
-Motorsport Academy;;;b;Motorsport Academy Lohéac;École de pilotage;;;4.5;300;Lohéac;;;OPERATIONAL;;3;;;;;;
-Motorsport Academy;;;c;Motorsport Academy Lohéac;Circuit automobile;;;4.1;12;Lohéac;;;OPERATIONAL;lun;1;;;;;;
-Motorsport Academy;;;e;Pilotage Passion;Circuit;;;4.0;10;;;;OPERATIONAL;;;;;;;;
+Volant Academie;;; a;Volant Academie Le Mans;École de pilotage;;;4.7;812;Le Mans;02;https://x;OPERATIONAL;lun;10;;;;;;
+Volant Academie;;;b;Volant Academie Lohéac;École de pilotage;;;4.5;300;Lohéac;;;OPERATIONAL;;3;;;;;;
+Volant Academie;;;c;Volant Academie Lohéac;Circuit automobile;;;4.1;12;Lohéac;;;OPERATIONAL;lun;1;;;;;;
+Volant Academie;;;e;Piste Ouest;Circuit;;;4.0;10;;;;OPERATIONAL;;;;;;;;

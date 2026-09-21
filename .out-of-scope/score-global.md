@@ -15,4 +15,4 @@ Les échappatoires existent déjà :
 
 ## Demandes reçues
 
-- Aucune pour l'instant ; la position est posée dès la première version (`REVUE.md`, « Ce qui est déjà décidé »).
+- Aucune pour l'instant ; la position est posée dès la première version (ADR 0003).

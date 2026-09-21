@@ -19,7 +19,7 @@ def lancer(*args, cwd=None):
 
 # ---------------------------------------------------------------- audit.py
 def test_audit_pack_trouve_le_client_et_les_alertes():
-    out = lancer(SCRIPTS / "audit.py", "places", FIXTURES / "places-pack.csv", "--client", "motorsport academy")
+    out = lancer(SCRIPTS / "audit.py", "places", FIXTURES / "places-pack.csv", "--client", "volant academie")
     assert "| stage de pilotage | Le Mans | 1 |" in out          # meilleure fiche du client au rang 1
     assert "| stage de pilotage | Nantes | absent |" in out      # client absent d'un pack
     assert "majuscules integrales" in out                        # alerte de nom sur un concurrent
@@ -28,14 +28,14 @@ def test_audit_pack_trouve_le_client_et_les_alertes():
 
 
 def test_audit_pack_ne_rend_pas_de_verdict_ni_de_score():
-    out = lancer(SCRIPTS / "audit.py", "places", FIXTURES / "places-pack.csv", "--client", "motorsport academy")
+    out = lancer(SCRIPTS / "audit.py", "places", FIXTURES / "places-pack.csv", "--client", "volant academie")
     assert "/100" not in out and "score" not in out.lower()
 
 
 def test_audit_reseau_doublons_et_categories():
-    out = lancer(SCRIPTS / "audit.py", "places", FIXTURES / "places-reseau.csv", "--client", "motorsport academy")
+    out = lancer(SCRIPTS / "audit.py", "places", FIXTURES / "places-reseau.csv", "--client", "volant academie")
     assert "3 fiche(s) au nom du client, 1 autre(s)" in out
-    assert "Noms en double" in out and "Motorsport Academy Lohéac" in out
+    assert "Noms en double" in out and "Volant Academie Lohéac" in out
     assert "Catégories principales hétérogènes" in out
 
 
@@ -86,7 +86,7 @@ def test_audit_neutralise_les_noms_hostiles():
     """Un nom de fiche ecrit par un tiers ne doit ni casser le tableau markdown ni injecter du HTML."""
     out = lancer(SCRIPTS / "audit.py", "places", FIXTURES / "places-pack-hostile.csv", "--client", "ma marque")
     assert "<script>" not in out and "&lt;script&gt;" in out
-    assert "Plombier \| " in out                                  # le pipe est echappe, la ligne reste lisible
+    assert r"Plombier \| " in out                                  # le pipe est echappe, la ligne reste lisible
     assert "| stage" not in out
     ligne = next(l for l in out.splitlines() if "alert" in l)
     assert ligne.count(" | ") >= 8                                # la ligne a toujours toutes ses colonnes

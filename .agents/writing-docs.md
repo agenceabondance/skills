@@ -35,7 +35,7 @@ Une à trois sections courtes, dans le vocabulaire propre de la skill : la boucl
 
 ## Questions fréquentes
 
-Les questions que les lecteurs posent vraiment, en gras, la réponse dessous. Une question observée vaut toujours plus qu'une inventée : chercher d'abord dans les issues du dépôt (`gh issue list --search "<skill>" --state all`), dans `REVUE.md` (les questions posées aux relecteurs), dans `CHANGELOG.md` (tout renommage produit un « où est passé... »). Le compte reste honnête : une skill discutée en mérite six, une skill neuve une ou deux, ou aucune ; supprimer le titre plutôt que remplir.
+Les questions que les lecteurs posent vraiment, en gras, la réponse dessous. Une question observée vaut toujours plus qu'une inventée : chercher d'abord dans les issues du dépôt (`gh issue list --search "<skill>" --state all`), dans `CHANGELOG.md` (tout renommage produit un « où est passé... »). Le compte reste honnête : une skill discutée en mérite six, une skill neuve une ou deux, ou aucune ; supprimer le titre plutôt que remplir.
 
 ## Ça marche si
 
