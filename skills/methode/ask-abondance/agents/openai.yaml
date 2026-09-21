@@ -1,0 +1,5 @@
+interface:
+  display_name: "Ask Abondance"
+  short_description: "Quelle skill pour ma situation"
+policy:
+  allow_implicit_invocation: false

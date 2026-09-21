@@ -1,0 +1,21 @@
+{
+  "name": "abondance-skills",
+  "version": "0.1.0",
+  "description": "Les skills Abondance : SEO local sourcé, brevets Google lus sur leurs revendications, et la discipline de citation qui court dessous.",
+  "author": {
+    "name": "Abondance",
+    "url": "https://www.abondance.com"
+  },
+  "repository": "https://github.com/agenceabondance/skill-seo-local",
+  "license": "MIT",
+  "keywords": ["seo", "seo-local", "google-business-profile", "brevets", "sources"],
+  "skills": [
+    "./skills/local/seo-local",
+    "./skills/local/audit-local",
+    "./skills/methode/sourcer",
+    "./skills/methode/ajouter-source",
+    "./skills/methode/brevet-google",
+    "./skills/methode/ask-abondance",
+    "./skills/methode/setup-abondance-skills"
+  ]
+}

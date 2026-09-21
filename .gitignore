@@ -1,7 +1,7 @@
 # Sorties des scripts (regenerables, peuvent contenir des donnees d'audit client)
-scripts/cache/
-scripts/sortie-places/
-sortie-places/
+**/scripts/cache/
+**/scripts/sortie-places/
+**/sortie-places/
 
 # Python
 __pycache__/
@@ -17,3 +17,6 @@ Thumbs.db
 # Jamais de secret dans le depot
 .env
 *.key
+
+# Reglages locaux de Claude Code
+.claude/

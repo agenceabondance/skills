@@ -1,0 +1,5 @@
+interface:
+  display_name: "Ajouter une source"
+  short_description: "Verser une source dans un corpus"
+policy:
+  allow_implicit_invocation: false

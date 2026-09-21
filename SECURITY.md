@@ -3,7 +3,7 @@
 ## La clé Places
 
 - `places.py` lit la clé dans la variable d'environnement `GOOGLE_PLACES_API_KEY` (sous Windows, à défaut, dans la variable utilisateur du registre, là où `setx` l'écrit). Il ne l'affiche jamais, ne l'écrit dans aucun fichier de sortie, et un test le vérifie.
-- **Ne jamais mettre la clé dans un fichier du dépôt**, ni dans un `.env` versionné. Le `.gitignore` exclut `scripts/cache/` et `scripts/sortie-places/`.
+- **Ne jamais mettre la clé dans un fichier du dépôt**, ni dans un `.env` versionné. Le `.gitignore` exclut tout `scripts/cache/` et tout `sortie-places/`.
 - Dans la console Google Cloud, **restreindre la clé à Places API (New)** (« Restrictions relatives aux API »), et si le script tourne toujours depuis les mêmes postes, ajouter une restriction par adresse IP. Une clé sans restriction fuitée peut être utilisée sur n'importe quelle API activée du projet.
 - Rattacher le projet à un compte de facturation avec **une alerte budgétaire**. Les champs demandés (avis, note, photos) relèvent du SKU le plus cher de Places ; le quota gratuit mensuel de ce SKU se compte en centaines d'appels, pas en milliers. Le script porte un compteur et un plafond (`--max-appels`, 200 par défaut) : le laisser bas.
 - `--dry-run` affiche les appels prévus sans en faire aucun. S'en servir avant un lot inhabituel.

@@ -11,7 +11,7 @@ Pour chaque source ci-dessous :
 4. La page a changé : mettre à jour la fiche (points, citations, `date_publication`), actualiser les signaux ici, **signaler le diff à l'utilisateur**. Jamais de réécriture silencieuse.
 5. Page inaccessible : le signaler, ne pas supprimer la fiche sans validation.
 
-Les brevets ne se surveillent pas (texte figé) ; seul leur **statut** (annuités, expiration) peut bouger : `py scripts/brevet.py <numéro> --meta` le relit.
+Les brevets ne se surveillent pas (texte figé) ; seul leur **statut** (annuités, expiration) peut bouger : `brevet.py <numéro> --meta` (skill `brevet-google`) le relit.
 
 ## Sources à surveiller
 

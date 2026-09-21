@@ -21,7 +21,7 @@ Usage :
 --client est une expression reguliere (insensible a la casse) testee sur le nom de la fiche.
 
 Le fichier produit est du markdown a coller dans la section 4 et 5 du livrable
-(grille/gabarit-livrable.md). Il ne rend AUCUN verdict : il aligne les chiffres et
+(grille/gabarit-livrable.md, skill audit-local). Il ne rend AUCUN verdict : il aligne les chiffres et
 signale ce qui merite un oeil. Le verdict par famille reste un travail de lecture.
 
 Sur Mac : python3 a la place de py.
