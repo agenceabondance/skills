@@ -1,6 +1,6 @@
 # Journal des versions
 
-## Non publié
+## 0.2.0 - 2026-09-21
 
 - Le dépôt devient un dépôt de skills : `skills/local/` (`seo-local`, `audit-local`) et `skills/methode/` (`sourcer`, `ajouter-source`, `brevet-google`, `ask-abondance`). Chaque skill est user-invoked ou model-invoked ; `sourcer` devient l'unique propriétaire des niveaux de preuve ; plugin Claude Code dans `.claude-plugin/`.
 - `seo-local` ne fait plus que le corpus (répondre, vérifier) ; l'audit en six phases avec critères de fin est `audit-local` ; la lecture de brevets est `brevet-google`.
