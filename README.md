@@ -1,6 +1,6 @@
 # Skills Abondance
 
-[![skills.sh](https://skills.sh/b/agenceabondance/skill-seo-local)](https://skills.sh/agenceabondance/skill-seo-local)
+[![skills.sh](https://skills.sh/b/agenceabondance/skills)](https://skills.sh/agenceabondance/skills)
 
 Des skills pour Claude Code, Codex et tout agent qui lit le format `SKILL.md`, publiées par [Abondance](https://www.abondance.com), média SEO francophone. Elles partagent une règle : **ce qu'on écrit sur Google est adossé à une source, avec son niveau de preuve, ou marqué `(hors corpus)`.**
 
@@ -16,7 +16,7 @@ Deux voies, deux philosophies. Le **plugin Claude Code** installe l'ensemble com
 <summary><strong>Claude Code</strong></summary>
 
 ```
-/plugin marketplace add agenceabondance/skill-seo-local
+/plugin marketplace add agenceabondance/skills
 /plugin install abondance-skills@abondance
 ```
 
@@ -28,7 +28,7 @@ Un paquet géré, en lecture seule, mis à jour quand le dépôt publie une vers
 <summary><strong>Codex, et les autres agents</strong></summary>
 
 ```bash
-npx skills@latest add agenceabondance/skill-seo-local
+npx skills@latest add agenceabondance/skills
 ```
 
 L'installeur laisse choisir les skills. `sourcer` est appelée par toutes les autres : la prendre. `npx skills@latest update` reprend les dernières modifications.

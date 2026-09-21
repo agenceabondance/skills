@@ -9,7 +9,7 @@ Le dépôt est sa propre marketplace Claude Code (`.claude-plugin/marketplace.js
 <canonical-block name="claude-code">
 
 ```
-/plugin marketplace add agenceabondance/skill-seo-local
+/plugin marketplace add agenceabondance/skills
 /plugin install abondance-skills@abondance
 ```
 
@@ -22,7 +22,7 @@ Un paquet géré, en lecture seule, mis à jour quand le dépôt publie une vers
 <canonical-block name="skills-sh">
 
 ```bash
-npx skills@latest add agenceabondance/skill-seo-local
+npx skills@latest add agenceabondance/skills
 ```
 
 L'installeur laisse choisir les skills. `sourcer` est appelée par toutes les autres : la prendre. `npx skills@latest update` reprend les dernières modifications.
