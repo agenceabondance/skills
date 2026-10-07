@@ -1,0 +1,3 @@
+interface:
+  display_name: "Cocon sémantique"
+  short_description: "Construire un cocon sémantique sur données Haloscan"

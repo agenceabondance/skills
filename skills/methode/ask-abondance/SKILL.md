@@ -16,6 +16,7 @@ Tout part du même principe : ce qu'on écrit sur Google est **adossé** à une 
 - **Une question sur le classement local** (« est-ce que les posts comptent ? », « le mot-clé dans le nom ? ») → `/seo-local`. Il route vers les sources utiles et répond avec ses sources. Si la question est « audite-moi ça », c'est `/audit-local`.
 - **Vérifier un livrable, une reco, un article** → `/seo-local` aussi : une ligne par affirmation, confirmée / contredite / le corpus ne dit rien.
 - **Lire un brevet Google** (un numéro, un sujet) → `/brevet-google`. Il lit les revendications, pas le titre.
+- **Un cocon sémantique, une architecture de contenu autour d'un mot-clé pilier** → `/cocon-semantique`. Données Haloscan, du cadrage au XLSX ; deux pages ne visent jamais le même mot-clé.
 - **Verser une source dans un corpus** → `/ajouter-source`. Page, étude ou brevet ; la source entre avec son niveau de preuve ou n'entre pas.
 
 ## La méthode dessous
@@ -24,7 +25,7 @@ Tout part du même principe : ce qu'on écrit sur Google est **adossé** à une 
 
 ## Ce que le dépôt ne couvre pas encore
 
-Le classement organique et les moteurs de réponse IA ont leurs corpus ailleurs ; quand ils rejoindront ce dépôt, ils viendront avec leur skill de corpus et parleront la même méthode.
+Le bucket organique n'a pour l'instant qu'une skill de production (`/cocon-semantique`), sans corpus. Le corpus organique et celui des moteurs de réponse IA vivent ailleurs ; quand ils rejoindront ce dépôt, ils viendront avec leur skill de corpus et parleront la même méthode.
 
 ## Précondition
 

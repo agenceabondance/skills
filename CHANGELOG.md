@@ -1,5 +1,9 @@
 # Journal des versions
 
+## Non publié
+
+- Nouveau bucket `skills/organique/` avec `cocon-semantique` (model-invoked) : cocon sémantique sur données Haloscan, du cadrage au livrable XLSX. Page `docs/organique/cocon-semantique.md`, routeur `ask-abondance` et README mis à jour.
+
 ## 0.2.0 - 2026-09-21
 
 - Le dépôt devient un dépôt de skills : `skills/local/` (`seo-local`, `audit-local`) et `skills/methode/` (`sourcer`, `ajouter-source`, `brevet-google`, `ask-abondance`). Chaque skill est user-invoked ou model-invoked ; `sourcer` devient l'unique propriétaire des niveaux de preuve ; plugin Claude Code dans `.claude-plugin/`.

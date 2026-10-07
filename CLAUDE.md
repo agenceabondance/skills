@@ -1,6 +1,7 @@
 Les skills vivent dans des buckets sous `skills/`, un par sujet :
 
 - `local/` : le classement d'une fiche d'établissement dans Google.
+- `organique/` : le classement d'un site dans les résultats naturels (pas encore de corpus).
 - `methode/` : ce qui court sous tous les corpus (citation, brevets, routeur, setup, ajout de source).
 
 Un sujet nouveau (organique, moteurs de réponse IA) est un bucket nouveau, avec sa skill de corpus (`references/` + `00-index.md`) qui appelle `sourcer`. Un bucket `in-progress/` accueillerait une skill publique mais pas encore promue ; il n'existe pas tant qu'il n'a rien à contenir.
