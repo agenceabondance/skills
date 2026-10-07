@@ -8,10 +8,11 @@
   },
   "repository": "https://github.com/agenceabondance/skills",
   "license": "MIT",
-  "keywords": ["seo", "seo-local", "google-business-profile", "brevets", "sources"],
+  "keywords": ["seo", "seo-local", "google-business-profile", "brevets", "sources", "cocon-semantique"],
   "skills": [
     "./skills/local/seo-local",
     "./skills/local/audit-local",
+    "./skills/organique/cocon-semantique",
     "./skills/methode/sourcer",
     "./skills/methode/ajouter-source",
     "./skills/methode/brevet-google",

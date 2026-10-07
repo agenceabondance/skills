@@ -115,6 +115,14 @@ Le classement d'une fiche d'établissement dans Google : pack local, Maps.
 
 - **[seo-local](./skills/local/seo-local/SKILL.md)** : le corpus (huit sources, six brevets, index de routage) ; répondre à une question de classement local avec des sources, vérifier qu'une recommandation est étayée.
 
+### Organique
+
+Le classement d'un site dans les résultats naturels de Google : mots-clés, architecture de contenu, maillage.
+
+**Model-invoked**
+
+- **[cocon-semantique](./skills/organique/cocon-semantique/SKILL.md)** : construire un cocon sémantique sur données Haloscan, du cadrage au livrable XLSX (clusters, personas, TOFU/MOFU/BOFU, anti-cannibalisation, Titles et Meta).
+
 ### Méthode
 
 Ce qui court sous tous les corpus, quel que soit le sujet.
