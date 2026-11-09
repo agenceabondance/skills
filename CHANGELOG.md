@@ -1,5 +1,9 @@
 # Journal des versions
 
+## 0.2.1 - 2026-11-09
+
+- `cocon-semantique` et le bucket `skills/organique/` sortent du dépôt : il couvre le SEO local et la méthode de citation.
+
 ## 0.2.0 - 2026-09-21
 
 - Le dépôt devient un dépôt de skills : `skills/local/` (`seo-local`, `audit-local`) et `skills/methode/` (`sourcer`, `ajouter-source`, `brevet-google`, `ask-abondance`). Chaque skill est user-invoked ou model-invoked ; `sourcer` devient l'unique propriétaire des niveaux de preuve ; plugin Claude Code dans `.claude-plugin/`.
