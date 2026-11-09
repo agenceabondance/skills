@@ -1,5 +1,9 @@
 # Journal des versions
 
+## 0.2.2 - 2026-11-09
+
+- La grille d'audit compte 53 contrôles, et non 43 : le nombre est corrigé dans `audit-local`, sa page docs, `CONTEXT.md` et le README du bucket.
+
 ## 0.2.1 - 2026-11-09
 
 - `cocon-semantique` et le bucket `skills/organique/` sortent du dépôt : il couvre le SEO local et la méthode de citation.

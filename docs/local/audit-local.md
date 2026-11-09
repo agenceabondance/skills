@@ -23,7 +23,7 @@ Vous la lancez en tapant `/audit-local` ; l'agent ne la prendra pas seul. Elle p
 
 ## Six phases, un critère de fin chacune
 
-Cadrer, inventorier les données, collecter, dérouler la grille, écrire, et (si demandée) la version client. Chaque phase se ferme sur une condition vérifiable, pas sur une impression : « les 43 contrôles ont un verdict », « chaque 🟠 / 🔴 porte constat, source et preuve ». La phase 2 est celle qui protège le livrable : un ⚪ annoncé là est une limite, un ⚪ découvert en phase 4 est un trou.
+Cadrer, inventorier les données, collecter, dérouler la grille, écrire, et (si demandée) la version client. Chaque phase se ferme sur une condition vérifiable, pas sur une impression : « les 53 contrôles ont un verdict », « chaque 🟠 / 🔴 porte constat, source et preuve ». La phase 2 est celle qui protège le livrable : un ⚪ annoncé là est une limite, un ⚪ découvert en phase 4 est un trou.
 
 ## Questions fréquentes
 
@@ -31,7 +31,7 @@ Cadrer, inventorier les données, collecter, dérouler la grille, écrire, et (s
 
 Parce que les poids des signaux ne sont pas publics : un score les additionnerait sans les connaître. La section 6 du livrable (actions classées par risque, effort et preuve) est ce qu'un client attend d'un score, sans l'invention. Position tenue depuis la première version : `.out-of-scope/score-global.md`.
 
-**43 contrôles, est-ce qu'un agent tient ça en une passe ?**
+**53 contrôles, est-ce qu'un agent tient ça en une passe ?**
 
 C'est la question posée aux relecteurs de la première version. La grille est lue famille par famille, et la phase 4 exige un verdict par contrôle avant d'écrire : c'est le critère de fin, pas la longueur, qui tient l'agent. Si une famille est ⚪ d'avance (pas d'accès aux Performances), elle ne coûte rien.
 

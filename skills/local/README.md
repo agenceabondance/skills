@@ -6,7 +6,7 @@ Le classement d'une fiche d'établissement dans Google : pack local, Maps.
 
 Accessibles seulement quand vous les tapez (Claude Code : `disable-model-invocation: true` ; Codex : `policy.allow_implicit_invocation: false` dans `agents/openai.yaml`).
 
-- **[audit-local](./audit-local/SKILL.md)** : auditer une fiche ou un réseau en six phases, chacune avec son critère de fin, jusqu'au livrable. Porte la grille (9 familles, 43 contrôles), le gabarit de livrable, `places.py` et `audit.py`.
+- **[audit-local](./audit-local/SKILL.md)** : auditer une fiche ou un réseau en six phases, chacune avec son critère de fin, jusqu'au livrable. Porte la grille (9 familles, 53 contrôles), le gabarit de livrable, `places.py` et `audit.py`.
 
 ## Model-invoked
 

@@ -47,7 +47,7 @@ Pour chaque contrôle : le constat observé (chiffre, capture, exemple), la sour
 
 Réseau multi-établissements : la famille I et `places.py reseau` sont le cœur. La cohérence entre fiches (modèle de nom, catégorie, une page par établissement) et les fiches en retard pèsent plus que l'optimisation d'une fiche isolée ([04], [08]).
 
-Terminé quand les 43 contrôles ont un verdict et que chaque 🟠 / 🔴 porte constat, source et preuve.
+Terminé quand les 53 contrôles ont un verdict et que chaque 🟠 / 🔴 porte constat, source et preuve.
 
 ## Phase 5 : Écrire le livrable
 
