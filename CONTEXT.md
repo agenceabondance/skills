@@ -26,7 +26,7 @@ Se dit d'une affirmation qui cite sa source `[NN]` ou `[USxxxx]` avec son niveau
 La marque d'une affirmation qu'aucune source ne porte. Pas un défaut : un aveu, qui dit au lecteur où s'arrête ce qu'on sait.
 
 **Contrôle** :
-Une ligne de la grille d'audit : ce qu'on vérifie, où prendre la donnée, quelle source le fonde, si le propriétaire peut agir. 43 contrôles en 9 familles.
+Une ligne de la grille d'audit : ce qu'on vérifie, où prendre la donnée, quelle source le fonde, si le propriétaire peut agir. 53 contrôles en 9 familles.
 
 **Famille** :
 Un groupe de contrôles (A. Conformité, B. Complétude, ... I. Multi-établissements). L'unité du verdict.
