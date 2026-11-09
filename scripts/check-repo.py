@@ -21,7 +21,7 @@ from pathlib import Path
 
 RACINE = Path(__file__).resolve().parents[1]
 SKILLS = RACINE / "skills"
-PROMUS = ("local", "methode", "organique")
+PROMUS = ("local", "methode")
 erreurs = []
 
 

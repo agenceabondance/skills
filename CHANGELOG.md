@@ -1,8 +1,8 @@
 # Journal des versions
 
-## Non publié
+## 0.2.1 - 2026-11-09
 
-- Nouveau bucket `skills/organique/` avec `cocon-semantique` (model-invoked) : cocon sémantique sur données Haloscan, du cadrage au livrable XLSX. Page `docs/organique/cocon-semantique.md`, routeur `ask-abondance` et README mis à jour.
+- `cocon-semantique` et le bucket `skills/organique/` sortent du dépôt : il couvre le SEO local et la méthode de citation.
 
 ## 0.2.0 - 2026-09-21
 
